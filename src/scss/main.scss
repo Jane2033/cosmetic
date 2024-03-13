@@ -1,0 +1,21 @@
+@import './resets';
+@import './variables';
+
+
+@mixin flexCenter($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+body{
+    background: url('/src/img/背景.jpg');
+    background-repeat: no-repeat;
+}
+
+.hero{
+    @include flexCenter(column);
+    position: relative;
+    margin: 60px auto;
+}
