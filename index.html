@@ -5,13 +5,69 @@
     <link rel="icon" type="image/svg+xml" href="/src/img/logoicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/scss/main.css">
   </head>
   <body class="">
-    <section class="hero">
-      <img src="./src/img/標題字.png">
-      <img src="./src/img/精華液.png">
+    <header>
+      <nav>
+        <img src="./src/img/logoicon.svg" class="logo" width="48px">
+        <a href="https://www.google.com.tw/">官網下單</a>
+      </nav>
+    </header>
+    <section class="section1">
+      <div class="bg">
+        <div class="mask">
+          <img src="./src/img/前景.png" class="" id="foreground">
+          <img src="./src/img/精華液1.png" class="" id="essense">
+          <img src="./src/img/泡泡2.png" class="" id="bubbles">
+        </div>
+      </div>
+      <div class="content">
+        <div class="content__hero">
+          <div class="content__hero--title">
+            <h1>極</h1>
+            <div>
+              <h3>岩薔薇聚光精華</h3>
+              <h6>Rock-Rose Spot-Lightening Essence</h6>
+            </div>
+          </div>
+          <p>含多重美白與抗老化成分，能美白淡斑並減少細紋產生，使肌膚光滑細緻、淨白透亮。</p>
+        </div>
+        <div class="content__ingredient">
+          <div class="content__ingredient--img">
+            <img src="./src/img/成分.png">
+          </div>
+          <div class="content__ingredient--items">
+            <div class="item-left">
+              <img src="./src/img/傳明酸.png" id="acid">
+              <img src="./src/img/岩薔薇萃取.png" id="rose">
+            </div>
+            <div class="item-right">
+              <img src="./src/img/熊果素.png" id="arbutin">
+              <img src="./src/img/激光藍藻.png" id="cyanobacteria">
+            </div>
+          </div>
+        </div>
+        <div class="content__slogan">
+          <img src="./src/img/slogan.png">
+        </div>
+      </div>
     </section>
-    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <!--<script type="text/javascript">
+      var scene = document.getElementById('scene');
+      var parallaxInstance = new Parallax(scene);
+    </script>-->
+
+    <script src="./src/js/main.js"></script>
+
   </body>
 </html>
